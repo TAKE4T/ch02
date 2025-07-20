@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 4px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+    <div>
+        <label>New Task: <input type="text" id="newTask" /></label>
+        <button id="addTask">Add Task</button>
+    </div>
+    <div>
+        <label>Date: <input type="date" id="newDate" /></label>
+        <button id="addDate">Add Date</button>
+    </div>
+    <table id="taskTable">
+        <thead>
+            <tr id="headerRow">
+                <th>Date</th>
+                <th>Review Date</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
